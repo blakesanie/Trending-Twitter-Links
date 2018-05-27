@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica", sans-serif;
+    font-weight: 100;
+}
+
+body {
+    background-color: #EEE;
+}
+
+p {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 14px;
+    color: #BBB;
+}
+
+p a {
+    text-decoration: underline;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+p a:hover {
+    color: black !important;
+}
+
+p a:visited {
+    color: #BBB;
+}
+
+h1 {
+    text-align: center;
+    line-height: 22vmin;
+    margin: 10vmin 0;
+    font-size: 6vmin;
+}
+
+span {
+    padding: 5vmin 8vmin;
+    margin-left: 3vmin;
+    background-image: url('http://goinkscape.com/wp-content/uploads/2015/07/twitter-logo-final.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#sites {
+    width: calc(100vw - 30px);
+    margin-left: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.site {
+    position: relative;
+    box-shadow: 0 0 10px 0px rgba(0,0,0,0.1);
+    margin: 0 15px 30px 15px;
+    flex: 1 1 auto;
+    min-width: calc(250px + 13vw);
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    background-color: white;
+}
+
+.site:hover {
+    box-shadow: 0 0 50px 0px rgba(0,0,0,0.1);
+    transform: scale(1.01);
+}
+
+h4 {
+    position: relative;
+    width: 15vmin;
+    line-height: 20vmin;
+    text-align: center;
+    font-size: 10vmin;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    /*background: linear-gradient(to bottom right, #59ADEB, black);*/
+    background-color: #59ADEB;
+}
+
+.textArea {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - 15vmin);
+    height: 100%;
+}
+
+.textArea a {
+    position: absolute;
+    width: calc(100% - 40px);
+    left: 20px;
+    text-align: center;
+    font-size: 4vmin;
+    bottom: 55%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.textArea a:hover {
+    color: #AAA;
+}
+
+
+h3 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 2.4vmin;
+    top: 55%;
+    white-space: nowrap; 
+    text-overflow: ellipsis;
+}
