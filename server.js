@@ -27,7 +27,7 @@ stream.on('tweet', function (tweet) {
 setInterval(function(){
     removeWeakLinks();
     time = 0;
-}, 300000);
+}, 10000);
 var time = 0;
 setInterval(function(){
     console.log(time, links.length);
